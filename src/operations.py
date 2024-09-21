@@ -9,6 +9,12 @@
 
 # Пример для чисел "1 2 3" и "9"
 result = (1 + 2) * 3
-print(result)
+
+if __name__ == "__main__":
+    print(result)
+
+def print_operation_answer():
+    print( 1 * (2 + 3) + (4 * 5) )
+    return 1 * (2 + 3) + (4 * 5)
 
 # TODO написать формулу для 1 2 3 4 5 и вывести значение на консоль

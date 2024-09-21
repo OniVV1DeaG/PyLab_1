@@ -21,3 +21,14 @@ birds = ['rooster', 'ostrich', 'lark', ]
 # выведите на консоль в какой клетке сидит лев (lion) и жаворонок (lark).
 # Номера при выводе должны быть понятны простому человеку, не программисту.
 # TODO здесь ваш код
+
+def print_zoo():
+    zoo.insert(1, 'bear')
+    print(zoo)
+    zoo.extend(birds)
+    print(zoo)
+    zoo.remove('elephant')
+    print(zoo)
+    print("Лев сидит на " + str(zoo.index('lion')) + ' позиции')
+    print("Жаворонок сидит на " + str(zoo.index('lark')) + ' позиции')
+    return (zoo, zoo.index('lion'), zoo.index('lark'))

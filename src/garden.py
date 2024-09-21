@@ -23,3 +23,15 @@ meadow = ('клевер', 'одуванчик', 'ромашка', 'клевер'
 
 # выведите на консоль те, которые растут на лугу, но не растут в саду
 # TODO здесь ваш код
+
+def print_garden():
+    garden_set = set(garden)
+    meadow_set = set(meadow)
+    all_set = garden_set | meadow_set
+    print(garden_set)
+    print(meadow_set)
+    print(all_set)
+    print(garden_set & meadow_set)
+    print(garden_set - meadow_set)
+    print(meadow_set - garden_set)
+    return (garden_set, all_set, meadow_set - garden_set)
